@@ -22,7 +22,7 @@ color = Color(20, 150, 20, 255),
 
 model = "models/player/impy/guardsman.mdl",
 
-description = [[Worthless recruit]],
+description = [[The Backbone of Humanity's Frontier.]],
 
 weapons = {},
 
@@ -72,13 +72,13 @@ category = "Imperial Guard",
 
 })
 
-TEAM_GUARDSMAN = DarkRP.createJob("Imperial Guard Close Combat Trooper", {
+TEAM_GUARDSMAN = DarkRP.createJob("Imperial Guard Urban Trooper", {
 
 color = Color(20, 150, 20, 255),
 
 model = "models/player/impy/guardsman.mdl",
 
-description = [[SPecialized Infantry armed for close-quarter combat.]],
+description = [[Specialized Infantry armed for close-quarter combat.]],
 
 weapons = {"m9k_m3","m9k_knife","weapon_wh40k_laspistol"},
 
@@ -212,7 +212,7 @@ category = "Imperial Guard",
 
 })
 
-TEAM_GUARDSMAN = DarkRP.createJob("Imperial Guard Advance AT Infantry ", {
+TEAM_GUARDSMAN = DarkRP.createJob("Imperial Guard A-AT Infantry ", {
 
 color = Color(20, 150, 20, 255),
 
@@ -240,7 +240,7 @@ category = "Imperial Guard",
 
 })
 
-TEAM_GUARDSMAN = DarkRP.createJob("Imperial Guard Special Weapons Trooper", {
+TEAM_GUARDSMAN = DarkRP.createJob("Imperial Guard Heavy Trooper", {
 
 color = Color(20, 150, 20, 255),
 
@@ -360,7 +360,7 @@ model = "models/player/impy/guardsman.mdl",
 
 description = [[Elite Infantry units of the Imperial Guard]],
 
-weapons = {"weapon_wh40k_lasgun","weapon_wh40k_laspistol","m9k_knife","m9k_m61_frag","m9k_ww2artillery","m9k_matador","m9k_aw50","weapon_camo","m9k_suicide_bomb","m9k_proxy_mine","m9k_sticky_grenade","weapon_wh40k_hotshotlasgun"},
+weapons = {"weapon_stunstick","weapon_wh40k_lasgun","weapon_wh40k_laspistol","m9k_knife","m9k_m61_frag","m9k_ww2artillery","m9k_matador","m9k_aw50","weapon_camo","m9k_suicide_bomb","m9k_proxy_mine","m9k_sticky_grenade","weapon_wh40k_hotshotlasgun"},
 
 command = "IGSF",
 
@@ -416,9 +416,9 @@ color = Color(0, 0, 0, 255),
 
 model = "models/player/dk/dk_pm/grenadierplayer.mdl",
 
-description = [[The Death Korps of Krieg is a siege specialist regiment of the Imperial Guard. They show a disturbing disregard for their own lives in combat.]],
+description = [[Elite Shock Troopers, of the Death Korps, experienced combat veterans, or those who just lived for too long.]],
 
-weapons = {"weapon_imp_lasgun_norm","weapon_imp_laspistol_compact","m9k_ex41","m9k_nerve_gas","weapon_flamer","weapon_doietoolus"},
+weapons = {"weapon_lasgun","weapon_doietoolger","m9k_m79gl","m9k_nerve_gas","m9k_m60"},
 
 command = "DKGrena",
 
@@ -444,7 +444,7 @@ color = Color(0, 0, 0, 255),
 
 model = "models/player/dk/dk_pm/grenadierplayer.mdl",
 
-description = [[The Death Korps of Krieg is a siege specialist regiment of the Imperial Guard. They show a disturbing disregard for their own lives in combat.]],
+description = [[Death Korps specialists that provide medical support in the frontlines.]],
 
 weapons = {"weapon_lasgun","weapon_doietoolger","weapon_medkit","m9k_nerve_gas"},
 
@@ -466,13 +466,13 @@ category = "Death Korps of Krieg",
 
 })
 
-TEAM_DK = DarkRP.createJob("Death Korps Assault Trooper", {
+TEAM_DK = DarkRP.createJob("Death Korps Shock Trooper", {
 
 color = Color(0, 0, 0, 255),
 
 model = "models/player/dk/dk_pm/guardsmanplayer.mdl",
 
-description = [[The Death Korps of Krieg is a siege specialist regiment of the Imperial Guard. They show a disturbing disregard for their own lives in combat.]],
+description = [[The Death Korps employ these shock troopers in vanguard assaults. Adept in taking enemy positions.]],
 
 weapons = {"weapon_lasgun","weapon_doietoolger","weapon_flamer"},
 
@@ -494,17 +494,45 @@ category = "Death Korps of Krieg",
 
 })
 
-TEAM_DK = DarkRP.createJob("Death Korps Assault Sharpshooter", {
+TEAM_DK = DarkRP.createJob("Death Korps Sharpshooter", {
 
 color = Color(0, 0, 0, 255),
 
 model = "models/player/dk/dk_pm/guardsmanplayer.mdl",
 
-description = [[The Death Korps of Krieg is a siege specialist regiment of the Imperial Guard. They show a disturbing disregard for their own lives in combat.]],
+description = [[These skilled marksmen are deployed by the Death Korps as long range support elements in combat.]],
 
 weapons = {"weapon_longlas","weapon_doietoolger"},
 
 command = "DKS",
+
+max = 0,
+
+salary = 100,
+
+admin = 0,
+
+vote = false,
+
+hasLicense = false,
+
+candemote = false,
+
+category = "Death Korps of Krieg",
+
+})
+
+TEAM_DK = DarkRP.createJob("Death Korps Sapper", {
+
+color = Color(0, 0, 0, 255),
+
+model = "models/player/dk/dk_pm/grenadierplayer.mdl",
+
+description = [[The Death Korps equivalent of combat engineers, specializes in clearing trenches and destroying fortifications.]],
+
+weapons = {"weapon_longlas","weapon_doietoolger","weapon_flamer","m9k_suicide_bomb"},
+
+command = "DKSAP",
 
 max = 0,
 
@@ -609,7 +637,7 @@ category = "Security Regiment",
 
 
 
-TEAM_SIS = DarkRP.createJob("Sister", {
+TEAM_SIS = DarkRP.createJob("Battle Sister", {
 
 color = Color(124, 59, 135, 255),
 
@@ -975,7 +1003,7 @@ command = "owner",
 
 max = 1,
 
-salary = 1000000000000000000000000000000,
+salary = 1,
 
 admin = 1,
 
@@ -1005,7 +1033,7 @@ command = "spoon",
 
 max = 1,
 
-salary = 1000000000000000000,
+salary = 1,
 
 admin = 1,
 
