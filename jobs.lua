@@ -80,7 +80,7 @@ model = "models/player/impy/guardsman.mdl",
 
 description = [[Specialized Infantry armed for close-quarter combat.]],
 
-weapons = {"m9k_m3","m9k_knife","weapon_wh40k_laspistol"},
+weapons = {"m9k_m3","m9k_knife","weapon_wh40k_laspistol","m9k_m61_frag"},
 
 command = "IGCC",
 
@@ -192,7 +192,7 @@ model = "models/player/impy/guardsman.mdl",
 
 description = [[Infantry Specialists that excell in clearing trenches and destroying enemy fortifications.]],
 
-weapons = {"weapon_wh40k_lasgun","m9k_knife","weapon_flamer","m9k_suicide_bomb"},
+weapons = {"m9k_m3","m9k_knife","weapon_flamer","m9k_suicide_bomb","m9k_proxy_mine"},
 
 command = "IGCE",
 
@@ -380,6 +380,34 @@ category = "Imperial Guard",
 
 })
 
+TEAM_GUARDSMAN = DarkRP.createJob("Imperial Guard Lord General", {
+
+color = Color(20, 150, 20, 255),
+
+model = "models/player/kogg/lord_general.mdl",
+
+description = [[The Lord General is assigned to oversee theatres of war, commanding multiple regiments and imperial assets.]],
+
+weapons = {"weapon_powersword","weapon_40k_plasma_pistol_b","weapon_bolternomral","weapon_camo"},
+
+command = "IGCOM",
+
+max = 0,
+
+salary = 1000,
+
+admin = 0,
+
+vote = false,
+
+hasLicense = false,
+
+candemote = false,
+
+category = "Imperial Guard",
+
+})
+
 
 
 TEAM_DK = DarkRP.createJob("Death Korps Guardsman", {
@@ -474,7 +502,7 @@ model = "models/player/dk/dk_pm/guardsmanplayer.mdl",
 
 description = [[The Death Korps employ these shock troopers in vanguard assaults. Adept in taking enemy positions.]],
 
-weapons = {"weapon_lasgun","weapon_doietoolger","weapon_flamer"},
+weapons = {"weapon_lasgun","weapon_doietoolger","weapon_flamer","weapon_frag"},
 
 command = "DKA",
 
@@ -530,7 +558,7 @@ model = "models/player/dk/dk_pm/grenadierplayer.mdl",
 
 description = [[The Death Korps equivalent of combat engineers, specializes in clearing trenches and destroying fortifications.]],
 
-weapons = {"weapon_longlas","weapon_doietoolger","weapon_flamer","m9k_suicide_bomb"},
+weapons = {"m9k_1887winchester","weapon_doietoolger","weapon_flamer","m9k_suicide_bomb","m9k_proxy_mine"},
 
 command = "DKSAP",
 
@@ -607,7 +635,7 @@ category = "Security Regiment",
 
 })
 
-TEAM_SEC = DarkRP.createJob("Security Commander", {
+TEAM_SEC = DarkRP.createJob("Security Marshall", {
 
 color = Color(0, 49, 122, 255),
 
@@ -645,9 +673,66 @@ model = "models/player/sisters/sisterspm/sisteradalie.mdl",
 
 description = [[All-female division of the Imperial Cult's ecclesiastical Adepta known as the Ecclesiarchy or, more formally, as the Adeptus Ministorum. The Sisterhood's Orders Militant serve as the Ecclesiarchy's military arm, mercilessly rooting out corruption and heresy within humanity and every organisation of the Adeptus Terra.]],
 
-weapons = {"weapon_imp_40k_melta","weapon_flamer","weapon_40k_plasma_pistol_b"},
+weapons = {"weapon_40k_bolter","weapon_chainsword"},
 
 command = "Sister",
+
+max = 0,
+
+salary = 100,
+
+admin = 0,
+
+vote = false,
+
+hasLicense = false,
+
+candemote = false,
+
+category = "Sisters of Battle",
+
+})
+
+TEAM_SIS = DarkRP.createJob("Dominion", {
+
+color = Color(124, 59, 135, 255),
+
+model = "models/player/sisters/sisterspm/sisteradalie.mdl",
+
+description = [[Battle Sisters trained to used specialized close combat weapons.]],
+
+weapons = {"weapon_flamer","weapon_meltagun","weapon_40k_boltpistol_b","weapon_doimarinebayonet"},
+
+command = "SisterD",
+
+max = 0,
+
+salary = 100,
+
+admin = 0,
+
+vote = false,
+
+hasLicense = false,
+
+candemote = false,
+
+category = "Sisters of Battle",
+
+})
+
+
+TEAM_SIS = DarkRP.createJob("Retributor", {
+
+color = Color(124, 59, 135, 255),
+
+model = "models/player/sisters/sisterspm/sisteradalie.mdl",
+
+description = [[Battle sisters specialized for heavy weapons and close support combat.]],
+
+weapons = {"weapon_wh40k_heavybolter","weapon_40k_boltpistol_b",,"weapon_flamer","weapon_doimarinebayonet"},
+
+command = "SisterR",
 
 max = 0,
 
@@ -671,13 +756,43 @@ color = Color(124, 59, 135, 255),
 
 model = "models/gonzo/hospitallerstormtrooper/hospitaller/hospitaller.mdl",
 
-description = [[All-female division of the Imperial Cult's ecclesiastical Adepta known as the Ecclesiarchy or, more formally, as the Adeptus Ministorum. The Sisterhood's Orders Militant serve as the Ecclesiarchy's military arm, mercilessly rooting out corruption and heresy within humanity and every organisation of the Adeptus Terra.]],
+description = [[Specialists of the Ordo Hospitaller, Sororitas that are skilled in the field of the medicae.]],
 
-weapons = {"weapon_imp_40k_melta","weapon_flamer","weapon_40k_plasma_pistol_b","weapon_medkit"},
+weapons = {"weapon_40k_bolterbolter","weapon_40k_boltpistol_b","weapon_medkit","weapon_doimarinebayonet"},
 
 command = "Sistermed",
 
 max = 1,
+
+salary = 100,
+
+admin = 0,
+
+vote = false,
+
+hasLicense = false,
+
+candemote = false,
+
+category = "Sisters of Battle",
+
+})
+
+})
+
+TEAM_SIS = DarkRP.createJob("Celestian", {
+
+color = Color(124, 59, 135, 255),
+
+model = "models/player/sisters/sisterspm/sisteradalie.mdl",
+
+description = [[Elite units of the Adepta Sororitas.]],
+
+weapons = {"weapon_strombolter","weapon_meltagun","weapon_chainsword","weapon_flamer","weapon_40k_plasma_pistol_b"},
+
+command = "SisterC",
+
+max = 0,
 
 salary = 100,
 
@@ -701,7 +816,7 @@ model = "models/gonzo/legatine/legatine.mdl",
 
 description = [[ all-female division of the Imperial Cult's ecclesiastical Adepta known as the Ecclesiarchy or, more formally, as the Adeptus Ministorum. The Sisterhood's Orders Militant serve as the Ecclesiarchy's military arm, mercilessly rooting out corruption and heresy within humanity and every organisation of the Adeptus Terra.]],
 
-weapons = {"weapon_imp_40k_melta","weapon_flamer","weapon_40k_plasma_pistol_b","powersword"},
+weapons = {"weapon_meltagun","weapon_flamer","weapon_40k_plasma_pistol_b","powersword","weapon_strombolter"},
 
 command = "SisterCom",
 
@@ -725,7 +840,7 @@ TEAM_DR = DarkRP.createJob("Desert Raider", {
 
 color = Color(135, 119, 59, 255),
 
-model = "models/gonzo/tallarndesertraiders/officer/officer.mdl",
+model = "models/gonzo/tallarndesertraiders/enlisted/enlisted.mdl",
 
 description = [[Regimentum of the Astra Militarum raised from the Desert World of Tallarn whose soldiers are highly skilled at desert and mobile armoured warfare. The Desert Raiders are mobile guerrilla fighters, evasive and opportunistic..]],
 
@@ -760,6 +875,34 @@ description = [[Regimentum of the Astra Militarum raised from the Desert World o
 weapons = {"m9k_svt40","weapon_wh40k_laspistol","m9k_machete","weapon_medkit"},
 
 command = "raidermed",
+
+max = 0,
+
+salary = 100,
+
+admin = 0,
+
+vote = false,
+
+hasLicense = false,
+
+candemote = false,
+
+category = "Desert Raiders",
+
+})
+
+TEAM_DR = DarkRP.createJob("Desert Raider Brawler", {
+
+color = Color(135, 119, 59, 255),
+
+model = "models/gonzo/tallarndesertraiders/officer/officer.mdl",
+
+description = [[Specialized Infantry of the raiders that focuses on close combat]],
+
+weapons = {"m9k_browningauto5","weapon_wh40k_laspistol","m9k_damascus"},
+
+command = "raiderbrawler",
 
 max = 0,
 
@@ -1059,7 +1202,7 @@ model = "models/gonzo/commissars/commissar5/commissar5.mdl",
 
 description = [[Donator]],
 
-weapons = {},
+weapons = {"weapon_execpistol","weapon_40k_boltpistol_b","weapon_stunstick"},
 
 command = "commissar",
 
