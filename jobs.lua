@@ -730,7 +730,7 @@ model = "models/player/sisters/sisterspm/sisteradalie.mdl",
 
 description = [[Battle sisters specialized for heavy weapons and close support combat.]],
 
-weapons = {"weapon_wh40k_heavybolter","weapon_40k_boltpistol_b",,"weapon_flamer","weapon_doimarinebayonet"},
+weapons = {"weapon_wh40k_heavybolter","weapon_40k_boltpistol_b","weapon_flamer","weapon_doimarinebayonet"},
 
 command = "SisterR",
 
@@ -775,8 +775,6 @@ hasLicense = false,
 candemote = false,
 
 category = "Sisters of Battle",
-
-})
 
 })
 
