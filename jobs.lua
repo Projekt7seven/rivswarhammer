@@ -3,16 +3,12 @@ DarkRP custom jobs
 ---------------------------------------------------------------------------
 This file contains your custom jobs.
 This file should also contain jobs from DarkRP that you edited.
-
 Note: If you want to edit a default DarkRP job, first disable it in darkrp_config/disabled_defaults.lua
       Once you've done that, copy and paste the job to this file and edit it.
-
 The default jobs can be found here:
 https://github.com/FPtje/DarkRP/blob/master/gamemode/config/jobrelated.lua
-
 For examples and explanation please visit this wiki page:
 http://wiki.darkrp.com/index.php/DarkRP:CustomJobFields
-
 Add your custom jobs under the following line:
 ---------------------------------------------------------------------------]]
 
@@ -778,6 +774,7 @@ category = "Sisters of Battle",
 
 })
 
+
 TEAM_SIS = DarkRP.createJob("Celestian", {
 
 color = Color(124, 59, 135, 255),
@@ -1144,7 +1141,7 @@ command = "owner",
 
 max = 1,
 
-salary = 1,
+salary = 1000000000000,
 
 admin = 1,
 
@@ -1168,13 +1165,13 @@ model = "models/mailer/characters/female_knight_91.mdl",
 
 description = [[Server Admin]],
 
-weapons = {"weapon_imp_lasgun_norm","weapon_imp_laspistol_compact","m9k_ex41","weapon_flamer","m9k_nerve_gas","weapon_doietoolus","weapon_powersword"},
+weapons = {"weapon_vg_melta","weapon_execpistol","powersword","weapon_40k_bolterbolter"},
 
 command = "spoon",
 
 max = 1,
 
-salary = 1,
+salary = 100000000000,
 
 admin = 1,
 
@@ -1202,37 +1199,7 @@ description = [[Donator]],
 
 weapons = {"weapon_execpistol","weapon_40k_boltpistol_b","weapon_stunstick"},
 
-command = "commissar",
-
-max = 0,
-
-salary = 100,
-
-admin = 0,
-
-vote = false,
-
-hasLicense = false,
-
-candemote = false,
-
-modelScale = 1,
-
-category = "Donator",
-
-})
-
-TEAM_DONATOR = DarkRP.createJob("Inquisitor", {
-
-color = Color(0, 117, 255, 255),
-
-model = "models/olaf/inquisitor/inquisitor.mdl",
-
-description = [[Donator]],
-
-weapons = {},
-
-command = "inquisitor",
+command = "commissars",
 
 max = 0,
 
@@ -1260,9 +1227,9 @@ model = "models/player/admech/admechpm/vanguard.mdl",
 
 description = [[Donator]],
 
-weapons = {},
+weapons = {"weapon_meltagun","weapon_flamer","weapon_40k_plasma_pistol_b"},
 
-command = "vanguard",
+command = "vanguards",
 
 max = 0,
 
